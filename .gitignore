@@ -1,6 +1,5 @@
 \dist
 \node_modules
-\bin
 \tests
 .vscode
 node_modules

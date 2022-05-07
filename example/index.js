@@ -11,9 +11,7 @@ let fmdList = [];
 
 
 const init = async() => {
-    uareu.loadLibs('../bin/DPCOper2.dll', '../bin/DPCrStor.dll', '../bin/DPDevice2.dll',
-            '../bin/DPDevTS.dll', '../bin/DPJasPer.dll',
-            '../bin/DPmsg.dll', '../bin/DPMux.dll', '../bin/DpSvInfo2.dll')
+    uareu.loadLibs('../bin/dpfpdd.dll', '../bin/dpfj.dll')
         .then(() => uareu.dpfpddInit())
         .then(() => uareu.dpfpddQueryDevices())
         .then((res) => uareu.dpfpddOpen(res.devicesList[0]))
